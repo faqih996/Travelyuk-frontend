@@ -1,0 +1,12 @@
+.button {
+    @apply bg-blue-500 text-white p-3 h-[43px] text-heading-5 font-label font-bold rounded-md;
+    max-width: 190px;
+}
+
+.fullWidth {
+    @apply w-full;
+}
+
+.outlined {
+    @apply bg-white border-2 border-blue-500 text-blue-500;
+}

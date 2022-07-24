@@ -1,6 +1,7 @@
 import Image from "next/image"
 
 import Container from "components/Container"
+import Button from "components/Button"
 import Search from "./Search"
 import Nav from "./Nav"
 
@@ -25,6 +26,9 @@ const Header = () => {
 
                     <div className="flex">
                         <Nav />
+                        <Button>
+                            Masuk
+                        </Button>
                     </div>
 
                 </div>
