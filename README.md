@@ -1,6 +1,9 @@
 # Starter Folder
 
-Silahkan lakukan perubahan code dengan mengikuti tutorial di folder ini.
-Jangan lakukan perubahan pada Folder finish.
+This Project use Next.js and Tailwind css
 
-Happy coding!
+how to use :
+
+run NPM run dev
+
+if can't run NPM install
