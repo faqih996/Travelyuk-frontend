@@ -2,6 +2,7 @@ import Image from "next/image"
 
 import Container from "components/Container"
 import Search from "./Search"
+import Nav from "./Nav"
 
 import travelologo from 'public/assets/travelo-logo-header.png'
 
@@ -20,6 +21,10 @@ const Header = () => {
                         />
 
                         <Search />
+                    </div>
+
+                    <div className="flex">
+                        <Nav />
                     </div>
 
                 </div>
