@@ -1,19 +1,29 @@
 import Image from "next/image"
 
+import Container from "components/Container"
+import Search from "./Search"
+
 import travelologo from 'public/assets/travelo-logo-header.png'
 
 const Header = () => {
     return (
         <header className="h-[85px] bg-white shadow-lg p-4">
-            <div className="flex justify-between items-center">
-                <Image
-                    src={travelologo}
-                    alt="Travelo-logo"
-                    placeholder="blur"
-                    height="48"
-                    width="182"
-                />
-            </div>
+            <Container>
+                <div className="flex justify-between items-center">
+                    <div className="flex">
+                        <Image
+                            src={travelologo}
+                            alt="Travelo-logo"
+                            placeholder="blur"
+                            height="48"
+                            width="182"
+                        />
+
+                        <Search />
+                    </div>
+
+                </div>
+            </Container>
         </header>
     )
 }
