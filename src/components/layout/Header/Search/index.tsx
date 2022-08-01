@@ -11,7 +11,7 @@ const Search = () => {
                 className="border border-gray-500 px-4 py-3 rounded-l-md text-sm text-gray-500"
             />
             
-            <button className="flex justify-center items-center bg-blue-500 boder border-blue-500
+            <button className="flex justify-center items-center bg-primary-blue boder border-blue-500
                 text-white text-sm 
                 rounded-r-md h-[46px] w-[46px]"
                 type="submit"

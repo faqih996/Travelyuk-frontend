@@ -83,7 +83,7 @@ const Footer = () => {
             </Container>
 
 
-            <div className="bg-blue-500 p-3">
+            <div className="bg-blue-100 p-3">
                 <p className="text-heading-5 text-white font-bold text-center">
                     Copyright 2022 Travelyuk. All Right Reserved.
                 </p>
