@@ -45,7 +45,8 @@ const TopSection = () => {
                             label="+50.000"
                             subLabel="Pelanggan"
                         />
-                        
+                            
+
                     </div>
                     {/* end info item section */}
 
@@ -56,4 +57,4 @@ const TopSection = () => {
     )
 }
 
-export default TopSection;
+export default TopSection
