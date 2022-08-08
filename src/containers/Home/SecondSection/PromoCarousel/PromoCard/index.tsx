@@ -28,7 +28,7 @@ const PromoCard = () => {
 
                 {/* Harga */}
                 <div className="flex gap-1">
-                    <p className="text-heading-5 text-gray-70 line-trought">
+                    <p className="text-heading-5 text-gray-70 line-through">
                         Rp. 7.700.000
                     </p>
                     <p className="text-heading-5 text-red-100 font-bold">
