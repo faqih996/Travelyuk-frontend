@@ -3,5 +3,8 @@
     padding-top: 85px;
     position: relative;
 
-    background-image
+    background-image: url('/assets/login/login-bg.png');
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
