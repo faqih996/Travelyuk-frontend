@@ -13,7 +13,6 @@ const Login = () => {
                     <p className="text-heading-3 font-label font-extrabold">
                         Masuk
                     </p>
-
                     <div className="flex mt-3">
                         <p className="text-heading-5 text-gray-50 font-semibold">
                             Belum punya akun?
@@ -22,7 +21,6 @@ const Login = () => {
                         className="text-heading-5 font-semibold text-blue-100 ml-2 hover:underline">
                             Daftar di sini
                         </a> 
-
                     </div>
 
                     <form action="" className="flex flex-col mt-8">
