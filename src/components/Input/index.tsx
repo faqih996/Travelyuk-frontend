@@ -6,37 +6,49 @@ import clsx from 'clsx'
 import { FaEye, FaEyeSlash } from 'react-icons/fa'
 import styles from './Input.module.css'
 
-const Input = ({ name, type, label, placeholder, className, register, errors, required, minLength, pattern }: InputProps) => {
-    const [hiddenPassword, setHiddenPassword] = useState(false)
+const Input = ({
+    name,
+    type,
+    label,
+    placeholder,
+    className,
+    register,
+    errors,
+    required,
+    pattern,
+    minLength,
+}: InputProps) => {
+    const [hidePassword, setHidePassword] = useState(false)
     const [inputType, setInputType] = useState(type)
     const isInputError = errors && errors[name]
-    const inputErrorHint = '${name}-input-error-hint'
+    const inputErrorHint = `${name}-input-error-hint`
 
     const handleEyeClick = () => {
-        setHiddenPassword((prevstate) => !prevstate)
+        setHidePassword((prevState) => !prevState)
 
-        if (type === 'password' && !hiddenPassword) {
+        if (type === 'password' && !hidePassword) {
             setInputType('text')
         } else {
             setInputType('password')
         }
     }
 
-    return(
+    return (
         <label htmlFor={name} className={clsx(styles.label, className)}>
             <div className="mb-3">{label}</div>
 
-            <input 
+            <input
                 {...register(name, {
                     required,
                     pattern,
-                    minLength
+                    minLength,
                 })}
                 formNoValidate
-                type= {inputType}
-                id= {name}
-                placeholder= {placeholder}
-                className= {styles.input}
+                className={clsx(styles.input, isInputError && styles.inputError)}
+                type={inputType}
+                name={name}
+                id={name}
+                placeholder={placeholder}
                 aria-describeby={inputErrorHint}
             />
 
@@ -46,11 +58,11 @@ const Input = ({ name, type, label, placeholder, className, register, errors, re
                     className={clsx(styles.eye, isInputError && styles.eyeError)}
                     onClick={handleEyeClick}
                 >
-                    {hiddenPassword ? (
-                        <FaEyeSlash className="h-6 w-6 text-gray-100"/> 
+                    {hidePassword ? (
+                        <FaEyeSlash className="h-6 w-6 text-gray-100" />
                     ) : (
                         <FaEye className="h-6 w-6 text-gray-100" />
-                    )} 
+                    )}
                 </button>
             ) : null}
 
