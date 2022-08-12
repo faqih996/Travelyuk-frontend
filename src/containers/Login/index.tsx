@@ -43,9 +43,16 @@ const Login = () => {
                             Lupa kata sandi?
                         </a>
 
-                        <Button>Masuk</Button>
+                        <Button type="submit" fullWidth>Masuk</Button>
                     </form>
 
+                    <p className="text-hrading-5 text-gray-70 my-8">Atau masuk dengan</p>
+                    <Button className="mb-4" variant="google">
+                        Masuk dengan Google
+                    </Button>
+                    <Button  variant="facebook">
+                        Masuk dengan Facebook
+                    </Button>
                 </div>
             </section>
         </Layout>

@@ -20,7 +20,7 @@ const TopSection = () => {
                             Jelajahi dunia yang indah dengan satu sentuhan dengan pesan tiket di Travel kamu akan dapat pelayanan terbaik untuk wisata liburanmu kemana saja dan kapan saja
                         </p>
 
-                        <Button>
+                        <Button className="w-[190px]">
                             Lihat Paket
                         </Button>
 
