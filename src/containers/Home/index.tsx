@@ -1,6 +1,6 @@
-import Layout from "../../components/Layout";
 import TopSection from "./TopSection";
 import SecondSection from "./SecondSection";
+import Layout from "components/Layout";
 
 const Home = () => {
   return (
