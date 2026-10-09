@@ -1,4 +1,4 @@
-import Layout from "components/Layout";
+import Layout from "../../components/Layout";
 import TopSection from "./TopSection";
 import SecondSection from "./SecondSection";
 
