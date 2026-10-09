@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 
 import Header from "./Header";
 import Footer from "./Footer";
@@ -8,14 +8,12 @@ type Props = {
   noFooter?: boolean;
 };
 
-const Layout = ({ children, noFooter = false }: Props) => {
+export default function Layout({ children, noFooter = false }: Props) {
   return (
     <>
       <Header />
       {children}
-      {noFooter ? null : <Footer />}
+      {!noFooter && <Footer />}
     </>
   );
-};
-
-export default Layout;
+}
