@@ -1,5 +1,6 @@
 {
   "private": true,
+  "webpack5": false,
   "scripts": {
     "dev": "next",
     "build": "next build",
@@ -7,6 +8,7 @@
     "type-check": "tsc",
     "lint": "next lint",
     "format": "prettier --write ."
+    
   },
   "dependencies": {
     "clsx": "1.1.1",
